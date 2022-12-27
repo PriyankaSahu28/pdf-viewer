@@ -1,0 +1,43 @@
+h1{
+    position: absolute;
+    font-size: 25px;
+    margin:30px 29px;
+   
+}
+h1.line{
+    color:rgb(32, 50, 250);
+    margin:31px 24px;
+}
+body{
+    margin:0px;
+}
+
+a{
+    color: rgb(32, 153, 246);
+    justify-content: left;
+    position: relative;
+    margin-left:0em;
+}
+p.doc1{
+text-decoration: none;
+
+margin-top:80px;
+ margin-left:0em;
+ font-size: 20px;
+  
+}
+
+p.doc2{
+    text-decoration: none;
+    color: rgb(96, 194, 255);
+  margin-left:0px;
+  font-size: 20px;
+   
+ }
+ p.doc3{
+    text-decoration: none;
+    color: rgb(96, 194, 255);
+  margin-left:0px;
+  font-size: 20px;
+   
+ }
