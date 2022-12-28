@@ -14,15 +14,21 @@ const Entry = () => {
       <h1>Documents </h1>
       <h1 className='line'>________________</h1>
      
-      <p className='doc1'><a href="javascript:void(0);" onClick={() => setDocument("doc1.pdf")}>- Sample document1.pdf</a>
+      <p className='doc1'><a href="javascript:void(0);" 
+       onClick={() => setDocument("doc1.pdf")}
+      >- Sample document1.pdf</a>
       </p>  
    
       
-        <p className='doc2'><a href="javascript:void(0);"  onClick={() => setDocument("doc2.pdf")}>- Sample document2.pdf</a></p>
+        <p className='doc2'><a href="javascript:void(0);"  
+         onClick={() => setDocument("doc2.pdf")}
+        >- Sample document2.pdf</a></p>
       
-          <p className='doc3'><a href="javascript:void(0);" onClick={() => setDocument("doc3.pdf")}>- Sample document3.pdf</a></p>
+          <p className='doc3'><a href="javascript:void(0);" 
+           onClick={() => setDocument("doc3.pdf")}
+          >- Sample document3.pdf</a></p>
     
-          <div className="App-viewer">
+           <div className="App-viewer">
         <PdfViewerComponent document={document} />
       </div>
     </div>
