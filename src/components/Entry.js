@@ -1,61 +1,49 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { useState } from "react";
 import PdfViewerComponent from "./PdfViewerComponent";
 
  import './Entry.css';
 import {Link} from "react-router-dom";
+import { ViewState } from 'pspdfkit';
+import Cookies from 'universal-cookie';
 
-const Entry = () => {
-    const [document, setDocument] = useState("");
+export class Entry extends Component {
+  render() {
+    const cookies = new Cookies();
   
   return (
-    <div>
+    <div className="App">
+    <div className="App-viewer">
        
-      <h1>Documents </h1>
+      <h1 className='head'>Documents </h1>
       <h1 className='line'>________________</h1>
      
-      <p className='doc1'><a href="javascript:void(0);" 
-       onClick={() => setDocument("doc1.pdf")}
-      >- Sample document1.pdf</a>
-      </p>  
-   
+      <p className='doc1'><a href="javascript:void(0);"  
+         onClick={() =>  { 
+          cookies.set('user', 'doc1.pdf', { path: '/' });
+          window.location.href = '/doc1';
+            }}
+        >- Sample document1.pdf</a></p>
       
-        <p className='doc2'><a href="javascript:void(0);"  
-         onClick={() => setDocument("doc2.pdf")}
+         <p className='doc2'><a href="javascript:void(0);"  
+         onClick={() =>  { 
+          cookies.set('user', 'doc2.pdf', { path: '/' });
+          window.location.href = '/doc2';
+            }}
         >- Sample document2.pdf</a></p>
       
           <p className='doc3'><a href="javascript:void(0);" 
-           onClick={() => setDocument("doc3.pdf")}
+           onClick={() =>  { 
+            cookies.set('user', 'doc3.pdf', { path: '/' });
+            window.location.href = '/doc3';
+              }}
           >- Sample document3.pdf</a></p>
     
-           <div className="App-viewer">
-        <PdfViewerComponent document={document} />
-      </div>
-    </div>
-    
+              
+    </div></div>
   )
- 
+  }
 }
-// export function Doc1(){
-//     const [document, setDocument] = useState("");
-//     return
-//       <p className='doc1'><a href="javascript:void(0);" onClick={() => setDocument("doc1.pdf")}>- Sample document1.pdf</a>
-//       </p> 
-  
-//     }
-//     export function Doc2(){
-//         const [document, setDocument] = useState("");
-//         return
-//           <p className='doc2'><a href="javascript:void(0);" onClick={() => setDocument("doc2.pdf")}>- Sample document1.pdf</a>
-//           </p> 
-      
-//         }
-//         export function Doc3(){
-//             const [document, setDocument] = useState("");
-//             return
-//               <p className='doc3'><a href="javascript:void(0);" onClick={() => setDocument("doc3.pdf")}>- Sample document1.pdf</a>
-//               </p> 
-          
-//             }
+
 
 export default Entry
