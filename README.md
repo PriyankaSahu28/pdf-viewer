@@ -17,20 +17,23 @@ Requirements to Get Started To get started, you’ll need:
 **Node.js version 14 or later.**
 
 A package manager compatible with npm. This guide contains usage examples for Yarn and the npm client (installed with Node.js by default). Make sure the npm version is 5.6 or greater.
-`**npm i install**`
+`npm i install`
 
 Building a React.js PDF Viewer with react-pdf
 Start by creating a React.js project with create-react-app:
 
-**npx create-react-app react-pdf-example**
+`npx create-react-app react-pdf-example`
 After the project is created, change the directory into the project folder:
 
-**cd react-pdf-example**
+`cd react-pdf-example`
 Adding react-pdf
 Now, you can install the npm package for the react-pdf library from the terminal:
 
-**npm install react-pdf**
+`npm install react-pdf`
 
 Now, start the application by running:
 
-`**npm start**`
+`npm start`
+
+![Screenshot (24)](https://user-images.githubusercontent.com/74130968/209979187-92821244-66b2-42b3-af4d-19d406c96fbf.png)
+
