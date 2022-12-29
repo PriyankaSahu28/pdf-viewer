@@ -35,5 +35,6 @@ Now, start the application by running:
 
 `npm start`
 
-![Screenshot (24)](https://user-images.githubusercontent.com/74130968/209979187-92821244-66b2-42b3-af4d-19d406c96fbf.png)
+![Screenshot (25)](https://user-images.githubusercontent.com/74130968/209979363-ef9fcfbd-b801-4d5a-9f09-c5286ad730c3.png)
+
 
